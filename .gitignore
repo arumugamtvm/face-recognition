@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+/src/axios
+/src/Clarifai
+
 # testing
 /coverage
 

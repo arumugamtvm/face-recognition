@@ -6,13 +6,13 @@ import Rank from './components/Rank/Rank'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import ParticlesBg from 'particles-bg'
 import { useState } from 'react';
-import Clarifai from './Clarifai';
+// import Clarifai from './Clarifai';
 import SignIn from './components/SignIn/Signin'
 import Register from './components/Register/Register'
 
-const app = new Clarifai.App({
-  apiKey: '62a8284ed94c4b1891b6b46bf603591a'
-});
+// const app = new Clarifai.App({
+//   apiKey: '62a8284ed94c4b1891b6b46bf603591a'
+// });
 
 const App = () => {
   // console.log('Clarifi API',app)
