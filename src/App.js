@@ -5,7 +5,7 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
 import Rank from './components/Rank/Rank'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import ParticlesBg from 'particles-bg'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // import Clarifai from './Clarifai';
 import SignIn from './components/SignIn/Signin'
 import Register from './components/Register/Register'
@@ -27,6 +27,11 @@ const App = () => {
     entries: 0,
     joined: ''
   })
+
+  useEffect(() => {
+    fetch('https://face-detection-backend-one.onrender.com')
+  }, [])
+
   const onInputChange = (event) => setUserInput(event.target.value)
 
   const loadUser = (user) => {
